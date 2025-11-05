@@ -1,0 +1,209 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - College Management System{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <h1>Dashboard</h1>
+        <p class="lead">Welcome to the College Management System dashboard.</p>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Quick Stats -->
+    <div class="col-md-3 mb-4">
+        <div class="card dashboard-widget widget-primary text-white">
+            <div class="card-body">
+                <h5 class="card-title">Students</h5>
+                <h2>2</h2>
+                <p>Total enrolled students</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-4">
+        <div class="card dashboard-widget widget-success text-white">
+            <div class="card-body">
+                <h5 class="card-title">Teachers</h5>
+                <h2>1</h2>
+                <p>Active teaching staff</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-4">
+        <div class="card dashboard-widget widget-info">
+            <div class="card-body">
+                <h5 class="card-title">Subjects</h5>
+                <h2>3</h2>
+                <p>Academic subjects</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-4">
+        <div class="card dashboard-widget widget-warning">
+            <div class="card-body">
+                <h5 class="card-title">Exams</h5>
+                <h2>2</h2>
+                <p>Upcoming exams</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Recent Activity -->
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5>Recent Activity</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="fas fa-user-plus text-success me-2"></i>
+                            New student enrolled
+                            <small class="d-block text-muted">Jane Smith</small>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Today</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="fas fa-file-alt text-primary me-2"></i>
+                            Exam results published
+                            <small class="d-block text-muted">Mathematics Midterm</small>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">Yesterday</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="fas fa-money-bill-wave text-success me-2"></i>
+                            Fee payment received
+                            <small class="d-block text-muted">John Doe - $5,500</small>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">3 days ago</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="fas fa-calendar-alt text-info me-2"></i>
+                            Timetable updated
+                            <small class="d-block text-muted">Grade 5 - Fall Term</small>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">1 week ago</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Upcoming Events -->
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5>Upcoming Events</h5>
+            </div>
+            <div class="card-body">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Science Midterm Exam</h6>
+                            <small>Oct 17, 2023</small>
+                        </div>
+                        <p class="mb-1">Grade 5 - 9:00 AM to 11:00 AM</p>
+                        <small class="text-muted">Room 102</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Parent-Teacher Meeting</h6>
+                            <small>Oct 20, 2023</small>
+                        </div>
+                        <p class="mb-1">All Grades - 2:00 PM to 5:00 PM</p>
+                        <small class="text-muted">School Auditorium</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Fall Break</h6>
+                            <small>Oct 25-29, 2023</small>
+                        </div>
+                        <p class="mb-1">No classes during this period</p>
+                        <small class="text-muted">School closed</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">Annual Sports Day</h6>
+                            <small>Nov 5, 2023</small>
+                        </div>
+                        <p class="mb-1">All Grades - 9:00 AM to 4:00 PM</p>
+                        <small class="text-muted">School Playground</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Quick Links -->
+    <div class="col-md-12 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5>Quick Links</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <a href="/students" class="btn btn-outline-primary w-100 py-3">
+                            <i class="fas fa-user-graduate fa-2x d-block mb-2"></i>
+                            Manage Students
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <a href="/admissions" class="btn btn-outline-primary w-100 py-3">
+                            <i class="fas fa-user-plus fa-2x d-block mb-2"></i>
+                            Admissions
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <a href="/timetables" class="btn btn-outline-primary w-100 py-3">
+                            <i class="fas fa-calendar-alt fa-2x d-block mb-2"></i>
+                            Timetables
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <a href="/exams" class="btn btn-outline-primary w-100 py-3">
+                            <i class="fas fa-file-alt fa-2x d-block mb-2"></i>
+                            Exams
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <a href="/subjects" class="btn btn-outline-primary w-100 py-3">
+                            <i class="fas fa-book fa-2x d-block mb-2"></i>
+                            Subjects
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <a href="/payments" class="btn btn-outline-primary w-100 py-3">
+                            <i class="fas fa-money-bill-wave fa-2x d-block mb-2"></i>
+                            Payments
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <a href="/reports" class="btn btn-outline-primary w-100 py-3">
+                            <i class="fas fa-chart-bar fa-2x d-block mb-2"></i>
+                            Reports
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <a href="/users" class="btn btn-outline-primary w-100 py-3">
+                            <i class="fas fa-users-cog fa-2x d-block mb-2"></i>
+                            Users
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
